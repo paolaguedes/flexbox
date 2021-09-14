@@ -178,4 +178,85 @@ Exemplo com space-around:
 
 ## Eixo vertical
 
-Quando seus elementos foram alocados em coluna, usamos outra propriedade do flexbox que é 
+Para alinhar elementos usando como base o eixo vertical usamos outra propriedade do flexbox que é :
+
+# Align-items
+
+- Possui como valores:
+    - center
+    - flex-end
+    - flex-start
+    
+E modifica nossos elementos verticalmente!
+
+Recomendo fortemente que ao acompanhar esse 'tutorial' você vá fazendo, sério, observa o que acontece e também o que não acontece kkkkkkkkk vai te ajudar a saber o que usar em cada situação. A prática é o melhor professor!
+
+E é por isso que vou deixar com vocês para modificar suas divs que estão em row com align-items, e partir para mostrar como funciona quando elas estão com flex-direction: column..
+
+# Flex-direction: column
+Aqui temos as mesmas divs, mas seu direcionamento é em coluna:
+
+![column](https://user-images.githubusercontent.com/53832972/133328624-48894479-2668-43be-ab64-2f6807874fa6.png)
+
+Queria que você testasse o justify-content nelas e ver o que acontece. Não funciona horizontalmente né? Doido isso mas quando você coloca seus elementos em coluna meio que as coisas invertem.
+
+- se nada acontece veja se tem height suficiente para elas se mexerem... (sim, ja me estressei muito com isso)
+
+Vamos ao código e sua visualização:
+
+
+```html
+  ...
+Exemplo com align-items: flex-end e justify-content: space-between
+
+<style>
+    
+    section {
+      display: flex;
+      flex-direction: column; 
+      align-items: flex-end;
+      justify-content: space-between;
+      height: 100vh; --> Para poder aumentar a altura da minha section e ver o comportamento do justify-content
+    }
+</style>
+```
+<img src="https://user-images.githubusercontent.com/53832972/133336762-49a1c2a1-b93e-4ce2-861a-b7638237f727.png">
+
+
+```html
+  ...
+
+Exemplo com align-items: flex-start e justify-content: space-around
+
+<style>
+    
+    section {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          height: 70vh; --> Para poder aumentar a altura da minha section e ver o comportamento do justify-content
+    }
+</style>
+```
+<img src="https://user-images.githubusercontent.com/53832972/133336966-9acc70f4-ce65-44e7-8002-50b4ce6f5f76.png">
+
+```html
+ ...
+Exemplo com align-items: center e justify-content: center
+
+<style>
+    
+    section {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      justify-content: center;
+      height: 100vh; --> Para poder aumentar a altura da minha section e ver o comportamento do justify-content
+    }
+</style>
+
+```
+
+<img src="https://user-images.githubusercontent.com/53832972/133337140-ecd44ff0-a524-45ed-a006-7fc84117b1c3.png">
+
