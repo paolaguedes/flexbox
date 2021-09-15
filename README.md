@@ -178,4 +178,6 @@ Exemplo com space-around:
 
 ## Eixo vertical
 
-Quando seus elementos foram alocados em coluna, usamos outra propriedade do flexbox que é 
+Quando seus elementos foram alocados em coluna, usamos outra propriedade do flexbox que é:
+
+# Align-content - Align-itens

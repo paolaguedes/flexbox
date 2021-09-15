@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando flexbox</title>
+    <meta name="author" content="paola guedes">
+</head>
+<body>
+    <style>
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        height: 100vh; 
+    }
+
+    div {
+        background-color: rgb(160, 148, 216);
+        width: 200px;
+        height: 200px;
+    }
+
+    section div:not(:first-child):not(:last-child) {
+      background-color: rgb(23, 25, 122);       
+    }
+    </style>
+
+      <section>
+        <div></div>
+          <div></div>
+        <div></div>
+      </section>
+
+</body>
+</html>
